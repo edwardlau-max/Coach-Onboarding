@@ -76,6 +76,14 @@
   .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
   .fact { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; }
   .fact b { display: block; font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 4px; }
+  .fact { border-top: 6px solid var(--c); background: var(--t); }
+  .fact b { color: var(--c); font-weight: 800; }
+  .fact.goal   { --c: #425fbc; --t: #eef2fb; }
+  .fact.for    { --c: #d14f63; --t: #fdeff1; }
+  .fact.train  { --c: #2f9c8f; --t: #ecf8f6; }
+  .fact.attach { --c: #b5650a; --t: #fff4e6; }
+  .fact.order  { --c: #625dc8; --t: #f1effc; }
+  .fact.pass   { --c: #2e7d32; --t: #edf7ee; }
 
   .table-wrap { overflow-x: auto; margin-top: 18px; border: 1px solid var(--line); border-radius: 14px; background: var(--card); }
   table { width: 100%; border-collapse: collapse; font-size: 15px; }
@@ -143,12 +151,12 @@
   <section id="overview">
     <h2>Overview</h2>
     <div class="facts">
-      <div class="fact"><b>Goal</b>New coach can teach Baby and Toddler classes alone after 8 weeks.</div>
-      <div class="fact"><b>For</b>New coaches teaching Baby (4–23 months) and Toddler (2–4 years). No Kids course yet.</div>
-      <div class="fact"><b>Training</b>2 lessons a week, 2 hours each.</div>
-      <div class="fact"><b>Attachment</b>4 hours every weekend with a senior coach, Week 2 to Week 6 (up to Week 8 if needed).</div>
-      <div class="fact"><b>Order</b>Baby first, then Toddler. Toddler skills build on Baby skills.</div>
-      <div class="fact"><b>Pass</b>First 2 solo classes score 3.5/5 or more on CCTV.</div>
+      <div class="fact goal"><b>Goal</b>New coach can teach Baby and Toddler classes alone after 8 weeks.</div>
+      <div class="fact for"><b>For</b>New coaches teaching Baby (4–23 months) and Toddler (2–4 years). No Kids course yet.</div>
+      <div class="fact train"><b>Training</b>2 lessons a week, 2 hours each.</div>
+      <div class="fact attach"><b>Attachment</b>4 hours every weekend with a senior coach, Week 2 to Week 6 (up to Week 8 if needed).</div>
+      <div class="fact order"><b>Order</b>Baby first, then Toddler. Toddler skills build on Baby skills.</div>
+      <div class="fact pass"><b>Pass</b>First 2 solo classes score 3.5/5 or more on CCTV.</div>
     </div>
 
     <div class="table-wrap">
